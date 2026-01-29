@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+}
+
+body{
+    background: linear-gradient(to right, #ffffff, #fed7ad);
+    overflow-x: hidden;
+    color: #222;
+}
+
+/* ================= NAVBAR ================= */
+nav{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    z-index: 1000;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+nav.scrolled{
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(109,67,0);
+}
+
+/* NAV LINKS */
+.links{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(109,67,0);
+    transition: 0.3s;
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+.contact-btn{
+    padding: 6px 18px;
+    border: 2px solid rgb(109,67,0);
+    border-radius: 20px;
+}
+
+/* MOBILE MENU ICON */
+.hamburg,
+.cancel{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* DROPDOWN MOBILE */
+.dropdown{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    transform: translateY(-100%);
+    transition: 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+
+.cancel{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: white;
+}
+
+/* ================= SECTION GLOBAL ================= */
+section{
+    min-height: 100vh;
+    padding: 80px 10%;
+}
+
+/* ================= HERO ================= */
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.image img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgb(109,67,0);
+}
+
+.content{
+    width: 50%;
+}
+
+.content h1{
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+}
+
+.content h1 span{
+    color: rgb(109,67,0);
+}
+
+.typewriter{
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.typewriter span::before{
+    content: "Unity Developer";
+    animation: words 12s infinite;
+    color: rgb(109,67,0);
+}
+
+
+.content p{
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* SOCIAL */
+.social-links{
+    margin: 15px 0;
+}
+
+.social-links i{
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: rgb(109,67,0);
+    transition: 0.3s;
+}
+
+.social-links i:hover{
+    transform: scale(1.2);
+}
+
+/* BUTTON */
+button{
+    padding: 10px 30px;
+    background: rgb(109,67,0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* ================= SECTION LIGHT ================= */
+.section-light{
+    background: rgba(255,255,255,0.7);
+}
+
+/* ================= SKILLS ================= */
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 40px;
+}
+
+.skills-grid h3{
+    margin-bottom: 10px;
+    color: rgb(109,67,0);
+}
+
+.skills-grid ul{
+    padding-left: 20px;
+}
+
+/* ================= PROJECTS ================= */
+.project-card{
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.project-card h3{
+    color: rgb(109,67,0);
+    margin-bottom: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 884px){
+    .links{
+        display: none;
+    }
+
+    .hamburg{
+        display: block;
+    }
+
+    .main-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .image img{
+        width: 200px;
+        height: 200px;
+    }
+}
+/* ===== GAME PROJECTS WITH IMAGE ===== */
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(109,67,0,0.2);
+}
+
+.project-card{
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+}

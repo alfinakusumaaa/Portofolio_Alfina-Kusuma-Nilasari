@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alfina Kusuma Nilasari | Game Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="nav-container">
+        <div class="logo"><span>Alfina Kusuma Nilasari</span></div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <div class="dropdown">
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        <a href="#home" onclick="cancel()">Home</a>
+        <a href="#about" onclick="cancel()">About</a>
+        <a href="#skills" onclick="cancel()">Skills</a>
+        <a href="#projects" onclick="cancel()">Projects</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+    <div class="main-container">
+        <div class="image">
+            <img src="main.png" alt="Alfina Photo">
+        </div>
+
+        <div class="content">
+            <h1>Hi, I'm <span></span></h1>
+            <h1><span>Alfina Kusuma Nilasari</span></h1>
+            <div class="typewriter">I'm a <span></span></div>
+
+            <p>
+                Game developer with a focus on educational games and interactive media.
+                Experienced in Unity, game mechanics, and UI design for learning applications.
+            </p>
+
+           <div class="social-links">
+    <!-- Email -->
+    <a href="mailto:alvinakusumaaa@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6281232417063" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/alfina-kusuma/" 
+       target="_blank" 
+       aria-label="LinkedIn" 
+       rel="noopener">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+</div>
+
+<a href="CV_ALFINA KUSUMA NILASARI.pdf" download>
+    <button>Download CV</button>
+</a>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-light">
+    <h2>About Me</h2>
+    <p>
+        I am a graduate of Informatics Education with a strong interest in game development,
+        particularly educational games and interactive learning media.
+        I have developed several academic game projects using Unity, focusing on gameplay logic,
+        user interaction, and visual design to support learning objectives.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+        <div>
+            <h3>🎮 Game Development</h3>
+            <ul>
+                <li>Unity 3D (2D Educational Games)</li>
+                <li>C# Programming (Basic–Intermediate)</li>
+                <li>Game Mechanics & Quiz Logic</li>
+                <li>Level & Flow Design</li>
+                <li>Game Testing & Debugging</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>🎨 Design & Multimedia</h3>
+            <ul>
+                <li>Adobe Illustrator (Game Assets)</li>
+                <li>Canva (UI Design)</li>
+                <li>Blender 3D (Basic Animation)</li>
+                <li>UI Design for Games</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section-light">
+    <h2>Game Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="img/quiz-game.png" alt="Educational Quiz Game">
+            <h3>🎯 Simple Math Quiz</h3>
+            <p>
+                A Unity-based educational game that presents basic mathematics questions in an interactive quiz format. The game features an automatic scoring system and a simple, user-friendly interface to support learning activities.
+            </p>
+            <p><strong>Features:</strong> Interactive quizzes, score system, simple UI</p>
+            <p><strong>Tools:</strong> Unity, C#</p>
+            <p><strong>Role:</strong> Game Programmer </p>
+        </div>
+
+        <div class="project-card">
+            <img src="img/titanic.png" alt="3D Animation Titanic">
+            <h3>🚢 3D Animation – Titanic</h3>
+            <p>
+                A 3D animation project that visualizes the Titanic ship using Blender. This project focuses on basic 3D modeling, lighting setup, and simple animation to create a visually engaging scene.
+            </p>
+            <p><strong>Focus:</strong> 3D modeling, lighting, basic animation</p>
+            <p><strong>Tools:</strong> Blender 3D, Unity 3D</p>
+            <p><strong>Role:</strong> 3D Modeler & Animator</p>
+        </div>
+
+        <div class="project-card">
+            <img src="img/edu-game.png" alt="Educational Game Research">
+            <h3>🎮 2D Adventure Educational Game – Research Project</h3>
+            <p>
+                An educational 2D adventure game where players progress through levels by completing learning-based challenges. The game combines simple adventure mechanics with educational content to make learning more engaging.
+            </p>
+            <p><strong>Features: </strong> Adventure gameplay, educational challenges, level progression</p>
+            <p><strong>Tools:</strong> Unity, Illustrator, Canva</p>
+            <p><strong>Role:</strong> Game Developer, UI Designer and Level Designer</p>
+        </div>
+        
+        <div class="project-card">
+            <img src="img/quiz-game1.png" alt="Educational Quiz Game">
+            <h3>🚗3D Educational Runner Game</h3>
+            <p>
+                A 3D educational runner game where players control a character to avoid obstacles while completing educational tasks. The game focuses on character movement, obstacle mechanics, and score tracking in a 3D environment.
+            </p>
+            <p><strong>Features:</strong>3D runner gameplay, obstacle system, scoring system</p>
+            <p><strong>Tools:</strong> Unity, C#</p>
+            <p><strong>Role:</strong> Game Programmer & Designer</p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function hamburg(){
+    document.querySelector(".dropdown").style.transform = "translateY(0)";
+}
+function cancel(){
+    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+}
+
+window.addEventListener("scroll", () => {
+    const nav = document.getElementById("navbar");
+    nav.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>
